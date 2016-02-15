@@ -21,36 +21,32 @@ h1, h2, h3, h4, h5, h6, span {
   margin: 0;
 }
 
-main {
-  height: 100%;
-  width: 100%;
-}
-
-main img {
-  max-height: 60%;
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
-
-main h1 {
+h1 {
+  font-size: 7rem;
   text-transform: uppercase;
-  font-size: 5rem;
-  width: 100%;
-  text-align: center;
-}
-main h2 {
-  font-size: 2rem;
-  width: 100%;
-  text-align: center;
 }
 
-.wrapper {
-  max-width: 100rem;
-  height: 100%;
-  margin: 0 auto;
+h2 {
+  font-size: 2rem;
+}
+
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
+}
+
+div {
+  padding: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
