@@ -3,6 +3,7 @@
   --secondary: #444444;
 }
 
+/* Global */
 html {
   height: 100%;
   font-size: 67.5%;
@@ -41,7 +42,17 @@ h2 {
   }
 }
 
-div {
+/* Classes */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+/* Home */
+
+main {
   padding: 20px;
   max-width: 150px;
   margin-left: auto;
@@ -49,21 +60,69 @@ div {
 }
 
 @media screen and (min-height: 500px) {
-  div {
+  main {
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  main {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  main {
     max-width: 400px;
   }
 }
 
-img {
+main img.logo {
   display: block;
   width: 100%;
   height: auto;
   margin: 0 auto;
 }
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
+/* Animation Selectors */
+main img.logo {
+  filter: blur(100px);
+  animation: fade_in 1.5s, wrack_in 1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+main h1 {
+  opacity: 0;
+  animation: fade_in 2s ease-out;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+main h2 {
+  opacity: 0;
+  transform: translateY(-2rem);
+  animation: slide_down 4s ease-out, fade_in 4s ease-in;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Animations */
+@keyframes spin {
+    from {transform: rotate(10deg);}
+    to {transform: rotate(0deg);}
+}
+
+@keyframes wrack_in {
+    0% {filter: blur(100px);}
+    100% {filter: blur(0px);}
+}
+
+@keyframes fade_in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes slide_down {
+  0% {transform: translateY(-2rem);}
+  100% {transform: translateY(0rem);}
 }
