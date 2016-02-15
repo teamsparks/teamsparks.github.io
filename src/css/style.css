@@ -61,6 +61,18 @@ main {
 
 @media screen and (min-height: 500px) {
   main {
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  main {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  main {
     max-width: 400px;
   }
 }
