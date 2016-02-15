@@ -101,7 +101,7 @@ main h1 {
 main h2 {
   opacity: 0;
   transform: translateY(-2rem);
-  animation: slide_down 4s, fade_in 4s ease-in;
+  animation: slide_down 4s ease-out, fade_in 4s ease-in;
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
