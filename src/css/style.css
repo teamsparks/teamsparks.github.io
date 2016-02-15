@@ -49,4 +49,19 @@ img {
   display: block;
   width: 100%;
   height: auto;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 900px){
+  img {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
 }
