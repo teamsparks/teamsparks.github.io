@@ -11,38 +11,47 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
   background-color: var(--primary);
+  min-height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, span {
   font-family: 'Montserrat';
   color: var(--secondary);
   margin: 0;
+  text-align: center;
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 5rem;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
+@media screen and (min-width: 550px){
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
 }
 
 div {
   padding: 20px;
-  max-width: 500px;
+  max-width: 150px;
   margin-left: auto;
   margin-right: auto;
+}
 
+@media screen and (min-height: 500px) {
+  div {
+    max-width: 400px;
+  }
 }
 
 img {
@@ -52,16 +61,9 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 900px){
-  img {
-    width: 80%;
-  }
-
-  h1 {
-    font-size: 6rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
 }
