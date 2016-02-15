@@ -3,6 +3,7 @@
   --secondary: #444444;
 }
 
+/* Global */
 html {
   height: 100%;
   font-size: 67.5%;
@@ -41,7 +42,17 @@ h2 {
   }
 }
 
-div {
+/* Classes */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+/* Home */
+
+main {
   padding: 20px;
   max-width: 150px;
   margin-left: auto;
@@ -49,21 +60,14 @@ div {
 }
 
 @media screen and (min-height: 500px) {
-  div {
+  main {
     max-width: 400px;
   }
 }
 
-img {
+img.logo {
   display: block;
   width: 100%;
   height: auto;
   margin: 0 auto;
-}
-
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
 }
