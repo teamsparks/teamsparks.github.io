@@ -100,8 +100,8 @@ main h1 {
 
 main h2 {
   opacity: 0;
-  transform: translateY(-4rem);
-  animation: slide_down 3s, fade_in 3.5s ease-in;
+  transform: translateY(-2rem);
+  animation: slide_down 4s, fade_in 4s ease-in;
   animation-delay: 1.5s;
   animation-fill-mode: forwards;
 }
@@ -123,6 +123,6 @@ main h2 {
 }
 
 @keyframes slide_down {
-  0% {transform: translateY(-4rem);}
+  0% {transform: translateY(-2rem);}
   100% {transform: translateY(0rem);}
 }
